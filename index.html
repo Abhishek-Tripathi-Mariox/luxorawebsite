@@ -1,0 +1,348 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUXORA | Building the Future of Luxury Travel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#f8df71",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#dce2f7",
+                      "on-tertiary-container": "#b0b2b3",
+                      "secondary-fixed-dim": "#dec65a",
+                      "on-secondary-fixed": "#211b00",
+                      "primary-container": "#064e3b",
+                      "surface": "#f9f9ff",
+                      "primary-fixed-dim": "#95d3ba",
+                      "surface-dim": "#d3daef",
+                      "on-primary-fixed-variant": "#0b513d",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#c5c7c8",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#404944",
+                      "on-tertiary-fixed": "#191c1d",
+                      "on-background": "#141b2b",
+                      "secondary-fixed": "#fbe273",
+                      "surface-tint": "#2b6954",
+                      "background": "#f9f9ff",
+                      "tertiary": "#2c2f30",
+                      "on-primary-fixed": "#002117",
+                      "inverse-surface": "#293040",
+                      "primary": "#003527",
+                      "tertiary-container": "#424546",
+                      "primary-fixed": "#b0f0d6",
+                      "surface-container-highest": "#dce2f7",
+                      "surface-bright": "#f9f9ff",
+                      "on-tertiary-fixed-variant": "#454748",
+                      "surface-container-low": "#f1f3ff",
+                      "inverse-primary": "#95d3ba",
+                      "on-surface": "#141b2b",
+                      "outline-variant": "#bfc9c3",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "outline": "#707974",
+                      "on-secondary-fixed-variant": "#534600",
+                      "on-secondary-container": "#736200",
+                      "secondary": "#6e5e00",
+                      "surface-container": "#e9edff",
+                      "on-primary-container": "#80bea6",
+                      "surface-container-high": "#e1e8fd",
+                      "tertiary-fixed": "#e1e3e4",
+                      "inverse-on-surface": "#edf0ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "24px",
+                      "container-max": "1280px",
+                      "stack-sm": "8px",
+                      "margin-edge": "64px",
+                      "section-gap": "120px",
+                      "gutter": "32px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-md": ["Playfair Display"],
+                      "body-lg": ["Inter"],
+                      "display-xl": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "display-xl": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.2s; }
+        .delay-2 { transition-delay: 0.4s; }
+        .delay-3 { transition-delay: 0.6s; }
+        
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 53, 39, 0.4), rgba(0, 53, 39, 0.8));
+        }
+
+        .pillar-card:hover .pillar-icon {
+            transform: scale(1.1) rotate(5deg);
+            color: #f8df71;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-edge h-20">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary" href="index.html">LUXORA</a>
+<div class="hidden md:flex items-center space-x-10">
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300" href="index.html">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="member.html">Membership</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="partner.html">Partners</a>
+<!-- <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Careers</a> -->
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-300 active:opacity-80" href="contact.html">
+                Enquire
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic, high-definition wide shot of a private luxury jet parked on a sleek, rain-slicked runway at dusk. The warm golden glow from the cabin windows spills onto the dark asphalt, creating a beautiful contrast against the deep emerald green and navy blue sky. The lighting is moody and sophisticated, capturing the essence of quiet luxury and elite global travel. The atmosphere is serene, exclusive, and expensive." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2RnLYQ0vy317oCDcoAWl67ebr0nEvVf2uEV1ZFHVTonUs4rUdky6HQ6izmNE0OpwdFYFSAbztDbROk2YckPG1NFcOrB3pCM7B9Oh_HiJENFze8U33slGn-vRl_GjglDONtL1bbi9UdFokdApY1gbGfZWrt7H51-Fqvs68JNEfahI0aJPNs7qPGyhOS2OGRstwdx2DrYSiL8Eofb2_Cmdvhi_KGY9a7xZVwvFEMImR4SRMVJa5beMGy56vYCtiyMSFVXG110D6QBU')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-edge text-on-primary">
+<div class="max-w-3xl reveal active">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-secondary-fixed mb-6 block">Established 2024</span>
+<h1 class="font-display-xl text-display-xl mb-8">Building the Future of Luxury Travel</h1>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-12 max-w-xl">
+                    Luxora is an invitation-only ecosystem redefining high-end hospitality through unparalleled human-centered service and global operational excellence.
+                </p>
+<div class="flex flex-wrap gap-stack-md">
+<a class="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform duration-300" href="#focus">Explore Luxora</a>
+<a class="border border-on-primary/30 backdrop-blur-sm text-on-primary px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all duration-300" href="#">Join Our Team</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-on-primary/60 text-4xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="reveal active">
+<div class="aspect-[4/5] rounded-xl bg-cover bg-center shadow-2xl" data-alt="An artistic, close-up photograph of a bespoke leather travel trunk with intricate gold-finished hardware, resting in the corner of a minimalist, sun-drenched architectural suite. The lighting is soft and natural, emphasizing the fine texture of the premium leather and the subtle emerald green interior lining. The overall aesthetic is one of Aman-inspired serenity and high-end editorial clarity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjkH8rZA1Un5XxzGB_9lctFHYLjI2AW_8kYrzS0tU-zt-RU9KE0TrHNz4EFVxHBCFAHUkMj2_66OkX2N98PyEIdkB36XEbsOFpZdRl7gfMgkUQdOvmBUzKgP9n0Llc9_7vZwb4wj0aDL3Rn6v0nkaJLWQGQt77-Kvsu8ADugs5PuUcqtKSTv8Qs1GD9PcGVjceS1_ic4tmFBMPNVXRNVfkEDlxyGmysRZ-ffRw9dWe7FgyUkknWsJCLIjIVvdQzJx1gr04hOYOtZo')"></div>
+</div>
+<div class="reveal delay-1 active">
+<h2 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-6">About Luxora</h2>
+<h3 class="font-headline-lg text-headline-lg mb-8 leading-tight">A Vision of Understated Excellence</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Our mission is to curate a frictionless existence for the world's most discerning travelers. We believe that true luxury is found in the stillness between destinations and the quiet confidence of a journey perfectly executed.
+                    </p>
+<div class="space-y-10 border-l-2 border-secondary-container pl-8 py-2">
+<div>
+<h4 class="font-headline-md text-[24px] mb-2">Our Vision</h4>
+<p class="text-on-surface-variant">To become the definitive global standard for modern luxury experiences through innovation and heritage.</p>
+</div>
+<div>
+<h4 class="font-headline-md text-[24px] mb-2">Our Mission</h4>
+<p class="text-on-surface-variant">Fostering a world-class network of partners and professionals dedicated to the art of exceptional service.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Focus Section -->
+<section class="py-section-gap bg-surface-container-low" id="focus">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="text-center max-w-2xl mx-auto mb-20 reveal active">
+<h2 class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-4">Our Focus</h2>
+<h3 class="font-headline-lg text-headline-lg">Four Pillars of Global Influence</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Luxury Travel -->
+<div class="group relative overflow-hidden rounded-xl h-[450px] reveal active">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A wide-angle, low-light photograph of a private villa overlooking the Mediterranean Sea at night. The pool area is lit with soft amber lights that reflect on the emerald water. The architectural lines are sharp and modern, following an Apple-inspired precision in design. The mood is tranquil, exclusive, and represents the pinnacle of luxury travel and lifestyle." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBY2vpdNc0k2rvILlkt2f4tbLwJ0tueOBsD_1FI8Xs-wR1D2GBAlRRPzQxlxtP-V1xNSWvspKDLlf1sOjAAJIAHRaCMWt1G5Tw7Gex-wEv6QnAhXCy4vlGAIw5rAh1d0eJoiC4vNAc23JMialCYVkJGca9uyuQlByxa_IJdq0cTiLPod9tCE9vNqDFdnAFNcN0dqs5f-VIrMomL6HOfq3srPjkm-A0Kb3BiQbK97LujIoJw_j75EqOmRQ3r4XZaiauy09La2TCiWKI')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-2">Luxury Travel</h4>
+<p class="font-body-md opacity-80">Bespoke itineraries that defy conventional boundaries.</p>
+</div>
+</div>
+<!-- Premium Experiences -->
+<div class="group relative overflow-hidden rounded-xl h-[450px] md:mt-12 reveal delay-1 active">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="An intimate shot of a private dining experience in a high-end, minimalist restaurant with floor-to-ceiling windows overlooking a glowing city skyline. A single gold-trimmed plate sits on a white linen tablecloth next to a crystal glass. The lighting is moody and precise, highlighting the premium quality of the materials and the elite, Aman-style atmosphere of curated experiences." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBYd8LBQF7K7RRznCnCLXXCWk032p0m3Np-PAK9kXMAqNH3jnkLxZ4Nl_tId3XvPWxD9jUSWCycGo__drQ4MiW32iMQZ2XJcqJn8j9EZNSzDBNnPYN56A_AZs0S8-hn0W0xLaTVop67qdtouOg5CydvoJH5PahYbNZCT3ZWR3Ck-ZJxjnbFebqePqX4AWZE2KMKdoJNtpW-pCJ_XQHtUDrgR8moETh6wLD74yEJkv6vIsNyA8bbfOgCrvzOuaUQKyXcByU515FIGN4')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-2">Premium Experiences</h4>
+<p class="font-body-md opacity-80">Curated moments that linger long after they conclude.</p>
+</div>
+</div>
+<!-- Trusted Partnerships -->
+<div class="group relative overflow-hidden rounded-xl h-[450px] reveal delay-2 active">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A professional, high-end meeting room with deep green velvet chairs and a polished dark wood table. Large windows reveal a blurry corporate cityscape. The focus is on a subtle handshake or the exchange of a metallic business card, symbolizing trusted global partnerships and high-stakes luxury business. The style is clean, sharp, and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFz6do1ThzitbeUD5pgelvMkerxyJysQHZuKFkueIcirebFRhyKy7uzT3qGzaXmrQy21cpULR8fDDX6MI17-6DbcC4X6-jzzaA8yB0pzjgeMe2SbWAFqKHWMwEUuS46wTl18eb-OR68OdhSxheL7BjmjY1GOyyl7ltG_8JVlcQfNkYT4-li-ZvmVGcnwEdnjbWk3hZNEwtCpAhTC8YLT1Zasz83N0Y4e199W22LRgSGTRJyvMt1dvl0dNM_Jr7Fy_tkAiHnDeQAHQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-2">Trusted Partnerships</h4>
+<p class="font-body-md opacity-80">Forging alliances with the masters of every craft.</p>
+</div>
+</div>
+<!-- Global Expansion -->
+<div class="group relative overflow-hidden rounded-xl h-[450px] md:mt-12 reveal delay-3 active">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A sleek, modern world map rendered in glowing gold lines on a deep emerald green glass wall within a corporate lobby. The lighting is soft and ambient, casting delicate shadows. The scene represents global expansion and the far-reaching influence of a premier luxury brand. The overall feeling is one of immense reach, quiet power, and technological excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2PONDEKXhZm0TH8Q5aLlEY2psSV0ij5nN8jbVv2fTp8rdyKscTwL-3-Y534XbcpwGt_BzX-m3UEcxPVJeJOdwqm0s0T_nWOIDdwuB8ioG4OhIuIq2viG6puckPskZDCfvvFQd98Ol81R4sLZdGhU0RICo9GzySWGS-WObxFmxaS6py9ViP3FOtIxExpllwumEGKSv5CvTbnL04MZ7ds2LbFfGbR098f1UsBOE2HfYXnK1PfZLrlZq84nlvO8FB0XLIINSsD7mrP8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-10 left-10 text-on-primary">
+<h4 class="font-headline-md text-headline-md mb-2">Global Expansion</h4>
+<p class="font-body-md opacity-80">Transcending borders to define a new era of hospitality.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Luxora Section -->
+<section class="py-section-gap bg-primary text-on-primary overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-4 reveal active">
+<h2 class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-6">Why Luxora</h2>
+<h3 class="font-headline-lg text-headline-lg mb-12">Built on Five Unwavering Pillars</h3>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-stack-lg reveal delay-1 active">
+<!-- Pillar 1 -->
+<div class="pillar-card p-10 bg-white/5 rounded-xl border border-white/10 transition-all duration-500 hover:bg-white/10 group">
+<span class="material-symbols-outlined pillar-icon text-5xl text-secondary-fixed mb-6 transition-all duration-500 inline-block">diamond</span>
+<h4 class="font-headline-md text-[24px] mb-4">Premium Brand</h4>
+<p class="text-on-primary/70">A legacy in the making, defined by visual silence and material perfection.</p>
+</div>
+<!-- Pillar 2 -->
+<div class="pillar-card p-10 bg-white/5 rounded-xl border border-white/10 transition-all duration-500 hover:bg-white/10 group">
+<span class="material-symbols-outlined pillar-icon text-5xl text-secondary-fixed mb-6 transition-all duration-500 inline-block">person_celebrate</span>
+<h4 class="font-headline-md text-[24px] mb-4">Human-Centered</h4>
+<p class="text-on-primary/70">Beyond algorithms. We prioritize high-touch, empathetic service delivered by experts.</p>
+</div>
+<!-- Pillar 3 -->
+<div class="pillar-card p-10 bg-white/5 rounded-xl border border-white/10 transition-all duration-500 hover:bg-white/10 group">
+<span class="material-symbols-outlined pillar-icon text-5xl text-secondary-fixed mb-6 transition-all duration-500 inline-block">handshake</span>
+<h4 class="font-headline-md text-[24px] mb-4">Partner Network</h4>
+<p class="text-on-primary/70">Collaborations with leading boutique hotels, private fleets, and luxury artisans.</p>
+</div>
+<!-- Pillar 4 -->
+<div class="pillar-card p-10 bg-white/5 rounded-xl border border-white/10 transition-all duration-500 hover:bg-white/10 group">
+<span class="material-symbols-outlined pillar-icon text-5xl text-secondary-fixed mb-6 transition-all duration-500 inline-block">auto_awesome</span>
+<h4 class="font-headline-md text-[24px] mb-4">Exceptional Experiences</h4>
+<p class="text-on-primary/70">Access to the inaccessible. Memories that are truly one-of-a-kind.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Current Journey Timeline -->
+<section class="py-section-gap bg-surface overflow-hidden">
+
+</section>
+<!-- Join Our Journey CTA -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-edge">
+<div class="relative bg-primary-container rounded-3xl p-16 md:p-24 overflow-hidden reveal active">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[300px]">travel_explore</span>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-6">Be Part of the Evolution</h2>
+<p class="font-body-lg text-body-lg text-on-primary/80 mb-12">
+                        We are looking for strategic partners and exceptional talent who share our commitment to defining the absolute peak of luxury travel.
+                    </p>
+<div class="flex flex-wrap gap-stack-md">
+<!-- <a class="bg-secondary-fixed text-on-secondary-fixed px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:shadow-xl transition-all" href="#">Careers</a> -->
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary-container hover:outline hover:outline-1 hover:outline-secondary-container transition-all" href="#">Partnership Enquiries</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+
+<div class="max-w-container-max mx-auto px-margin-edge py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-body-md text-body-md text-on-primary/70">
+                © 2026 LUXORA. All rights reserved.
+            </div>
+<div class="text-on-primary/40 font-label-sm text-[10px] uppercase tracking-widest">
+                A Visionary Hospitality Group
+            </div>
+</div>
+</footer>
+<script>
+        // Reveal animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar opacity change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-surface/95', 'shadow-md');
+            } else {
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+
+
+
+
+</body></html>

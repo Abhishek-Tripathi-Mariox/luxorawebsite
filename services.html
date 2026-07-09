@@ -1,0 +1,321 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUXORA | Bespoke Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#f8df71",
+                      "on-primary": "#ffffff",
+                      "surface-variant": "#dce2f7",
+                      "on-tertiary-container": "#b0b2b3",
+                      "secondary-fixed-dim": "#dec65a",
+                      "on-secondary-fixed": "#211b00",
+                      "primary-container": "#064e3b",
+                      "surface": "#f9f9ff",
+                      "primary-fixed-dim": "#95d3ba",
+                      "surface-dim": "#d3daef",
+                      "on-primary-fixed-variant": "#0b513d",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#c5c7c8",
+                      "on-error": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-surface-variant": "#404944",
+                      "on-tertiary-fixed": "#191c1d",
+                      "on-background": "#141b2b",
+                      "secondary-fixed": "#fbe273",
+                      "surface-tint": "#2b6954",
+                      "background": "#f9f9ff",
+                      "tertiary": "#2c2f30",
+                      "on-primary-fixed": "#002117",
+                      "inverse-surface": "#293040",
+                      "primary": "#003527",
+                      "tertiary-container": "#424546",
+                      "primary-fixed": "#b0f0d6",
+                      "surface-container-highest": "#dce2f7",
+                      "surface-bright": "#f9f9ff",
+                      "on-tertiary-fixed-variant": "#454748",
+                      "surface-container-low": "#f1f3ff",
+                      "inverse-primary": "#95d3ba",
+                      "on-surface": "#141b2b",
+                      "outline-variant": "#bfc9c3",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "outline": "#707974",
+                      "on-secondary-fixed-variant": "#534600",
+                      "on-secondary-container": "#736200",
+                      "secondary": "#6e5e00",
+                      "surface-container": "#e9edff",
+                      "on-primary-container": "#80bea6",
+                      "surface-container-high": "#e1e8fd",
+                      "tertiary-fixed": "#e1e3e4",
+                      "inverse-on-surface": "#edf0ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "24px",
+                      "container-max": "1280px",
+                      "stack-sm": "8px",
+                      "margin-edge": "64px",
+                      "section-gap": "120px",
+                      "gutter": "32px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-md": ["Playfair Display"],
+                      "body-lg": ["Inter"],
+                      "display-xl": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                      "display-xl": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.04)] h-20">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-edge h-full">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary" href="index.html">LUXORA</a>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="member.html">Membership</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="partner.html">Partners</a>
+<!-- <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Careers</a> -->
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary-container transition-all duration-300" href="contact.html">
+                Enquire
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[80vh] flex items-center justify-center overflow-hidden"><img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&amp;fit=crop&amp;q=80&amp;w=2000" alt="Luxury resort aerial view">
+
+<div class="absolute inset-0 bg-gradient-to-b from-surface via-transparent to-surface z-10"></div>
+<div class="relative z-20 text-center max-w-4xl px-margin-edge">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.3em] text-primary block mb-stack-md opacity-0 translate-y-4 animate-[fadeInUp_0.8s_ease_forwards]">Excellence Defined</span>
+<h1 class="font-display-xl text-display-xl text-primary mb-stack-lg leading-tight opacity-0 translate-y-4 animate-[fadeInUp_0.8s_0.2s_ease_forwards]">Our Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto opacity-0 translate-y-4 animate-[fadeInUp_0.8s_0.4s_ease_forwards]">
+                Curating the world’s most exclusive experiences with precision, discretion, and an unwavering commitment to luxury.
+            </p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-primary text-3xl">expand_more</span>
+</div>
+</header>
+<!-- Service Grid Section -->
+<main class="max-w-container-max mx-auto px-margin-edge py-section-gap">
+<!-- Category 1: Luxury Mobility -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap items-center reveal-on-scroll active">
+<div class="md:col-span-7 relative group">
+<div class="overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A side view of a sleek, black luxury chauffeur-driven sedan parked in front of a modern glass skyscraper in London at dusk. Soft warm interior lighting glows through the windows. The overall aesthetic is minimalist, dark, and highly professional, with emerald green accents in the background architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR4hg8ZRX0Uum-tmjMahQSKz_Ki26h8vvp6KgEaMgnlAPoHkzuNAi-t-PD1HbHO6LuUukWnO8v5iRhP93QWZzkoDYPdFU3DODUX0VcvP5O3lPUBW3b5Hri5H8PPwOhrDx_rTd_5Uo8kPkjhi8STlIfyTZOEJHTL9sSsCK14TQGqpwH2iAS1m6tyIo9SJx7Z9-sqvVlPMuJITjEn-i2TS134bRQiw2sjrA7HUan2tXQdaiBoHQeHMvzcc4qW0Z9ueKCve2JavDnCyo">
+</div>
+</div>
+<div class="md:col-span-5 md:pl-gutter">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">01</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Luxury Mobility</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                    Seamless transportation tailored to your schedule. From professional chauffeur services and executive airport transfers to a bespoke fleet of high-performance vehicles for self-drive enthusiasts.
+                </p>
+<ul class="space-y-3 mb-stack-lg">
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Professional Chauffeurs
+                    </li>
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Airport Transfers
+                    </li>
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Executive Travel
+                    </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest group" href="#">
+                    Explore Mobility <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Category 2: Luxury Stay -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap items-center reveal-on-scroll active">
+<div class="md:col-span-5 order-2 md:order-1 md:pr-gutter">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">02</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Luxury Stay</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                    Access the world's most coveted addresses. Our portfolio includes ultra-exclusive hotel suites, secluded mountain retreats, and private villas with full domestic staff.
+                </p>
+<ul class="space-y-3 mb-stack-lg">
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Elite Hotels &amp; Resorts
+                    </li>
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Private Managed Villas
+                    </li>
+<li class="flex items-center gap-2 font-label-sm text-label-sm uppercase text-on-surface">
+<span class="w-8 h-px bg-secondary-container"></span> Global Suite Collection
+                    </li>
+</ul>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest group" href="#">
+                    View Portfolio <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 relative group">
+<div class="overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An ultra-luxury overwater villa in the Maldives at sunrise. The architecture is minimal with clean lines and natural wood. Crystal clear turquoise water surrounds the deck which features emerald green cushions and gold lanterns. The atmosphere is serene, high-end, and private." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNqQgqcyt_cd_VBHC2LLNUfl73LJueqWlO-pgYQibY7HsPQe_YGqy8eqS8LNWvjLb8eK6fNnwvcEB68L6rgYQ1MDK_vy8u2EY3Ir4RZ0QZCSA2V_d-BCqbhK_s_ifUkLBuSqNI5KuTsSW0DijQ989bg68umHhpCKb1Xq3VZCQw-vHTts9rHL7YwjaUwMVMx1AqPpaQ9T01ZkxH7iHhQQH4lTMsehAG5k-F2K6bI1Dmu22fYfb-liQIiGVTReJyxaFTH97FGRt0Iak">
+</div>
+</div>
+</section>
+<!-- Category 3 & 4: Marine & Aviation (Bento Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-section-gap">
+<!-- Marine -->
+<section class="reveal-on-scroll group active">
+<div class="overflow-hidden aspect-[4/5] mb-stack-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-angle shot of a stunning white luxury superyacht cruising through the deep blue Mediterranean Sea. A wake of white foam follows the vessel. The deck is sparsely populated with elegant furniture. Bright midday sun creates crisp shadows and a vibrant, energetic atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC45IzMjksa4VKpz310aR2GrtrolbCYfw76VvDc22v79hzVFnx5Z8zyaNxbS1e1lR4ymS4Xz-G5YCBBANegyVxTkcXfhddkZwAX9TIUpwiTHnhrB41dKCOtp9NUlw0cpcbkk9LZyyQOsPu7UUCvPKQmmUcQt9_hWSdCAd9fgBJlYRJDR9dJOq7Jco85cM4wouE2CCiLeG7Cwr1Pdl0remn7nY3WSf-iyAgFXq0jJTPLDWRPfUhcVCaEjkbMTCvudXVIKDlBNWTDRNE">
+</div>
+<div class="px-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">03</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-sm">Marine</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        Global yacht charters from the Amalfi Coast to the Caribbean. Fully crewed vessels ranging from explorer yachts to classic sailboats.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest" href="#">
+                        Yacht Charter <span class="material-symbols-outlined">anchor</span>
+</a>
+</div>
+</section>
+<!-- Aviation -->
+<section class="reveal-on-scroll group mt-gutter md:mt-12 active">
+<div class="overflow-hidden aspect-[4/5] mb-stack-md bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a private jet cabin featuring ultra-premium leather seats in a creamy beige. Large windows show a view of the sunset above the clouds. A small gold tray with crystal glassware sits on a polished dark wood table. Emerald green lighting details accentuate the cabin's trim." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVi88riDB5Ne7Mi_b-y-Wwsbf_XBBEOeDbQbaGdQofUBJJ5lq9VWyJwKrOA6EMwgVaz0K2zx26VDt5dyb9D9Tm-TEf3dFT-IdWoqTpE_ZTUpAuSnqi0vCHZpNujk3PKeD0-Olw56UgOVNC7LcGZqMbAwlHkuIFZTNoH6XjTA1wa6IKmFZDoDY6kr0YObEsyvGSYP0ktjwIIWPRBDB8WEVYz4d9Vro2t5kgFqwGlk8jMpIF-iWg8DPrVhwHZIHarOiCtSaA-lJZ2Nc">
+</div>
+<div class="px-2">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">04</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-sm">Aviation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">
+                        On-demand private jet travel with no membership required. Access to a global fleet of light, midsize, and heavy jets within hours.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm uppercase tracking-widest" href="#">
+                        Book Flight <span class="material-symbols-outlined">flight_takeoff</span>
+</a>
+</div>
+</section>
+</div>
+<!-- Category 5: Experiences -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-gap items-center reveal-on-scroll active">
+<div class="md:col-span-8 relative group">
+<div class="overflow-hidden aspect-[21/9] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A long exposure shot of a high-end fine dining table set in a lush outdoor garden in Tuscany. The table is adorned with crystal glasses, white linen, and green floral arrangements. String lights glow softly overhead in the twilight. The mood is romantic, sophisticated, and exclusive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIQRDGRwqbyG5ARKG5AJut8v8HBFesF5rKljs3DjTXRNIa8jqSq7HXcPIZzJGouHD3k9Mc71rDrt4yJzIsXNfwXYDBWIOWDqKd6u6Tn9fmgifLbOdDrTQJcBDH65dL3TmtElR14mXkoBFlFlTojz4FhySKKyWA96jNW__bqY13FKY9Jq9TGboGn74T_zO0YbkROF7nYUj1oMQvrPyd2AxweAG7__cydyZMMhhO_Zwr3ZJDuLEHl5u8b9ke0DGIlLnRNZ07MZibBSk">
+</div>
+</div>
+<div class="md:col-span-4 md:pl-gutter">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">05</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Experiences</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                    Memories crafted with care. From Michelin-starred private dining to wellness retreats in the Alps and curated family adventures.
+                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="material-symbols-outlined text-primary block mb-1">restaurant</span>
+<span class="text-[10px] font-label-sm uppercase">Fine Dining</span>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg text-center">
+<span class="material-symbols-outlined text-primary block mb-1">spa</span>
+<span class="text-[10px] font-label-sm uppercase">Wellness</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category 6: Concierge -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center reveal-on-scroll active">
+<div class="md:col-span-4 order-2 md:order-1 md:pr-gutter">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary block mb-stack-sm">06</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-md">Concierge</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">
+                    Your personal gateway to the impossible. Lifestyle management, VIP event access, and professional planning for life's most important milestones.
+                </p>
+<div class="bg-primary p-gutter text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-stack-sm">24/7 Global Desk</h3>
+<p class="font-body-md text-body-md opacity-80 mb-stack-md">Our dedicated specialists are available around the clock to assist with any request, anywhere.</p>
+<button class="border border-on-primary/30 px-6 py-2 font-label-sm text-label-sm uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300">Contact Desk</button>
+</div>
+</div>
+<div class="md:col-span-8 order-1 md:order-2 relative group">
+<div class="overflow-hidden aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A focused, cinematic close-up of a concierge's hands in white gloves handling a gold-embossed invitation card. The background is a blurred high-end hotel lobby with emerald green marble and brass details. The lighting is warm and directional, highlighting the texture of the card." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlf2JWKFk5sF8cj36P2yc5_R_1V5Qiwig7BXAKmtM-g4QwjPaH6zX0s7KmFTT7BuPQ3JOpY9lGXOvAoWwf4I7zKg3lyyC8v4S0BCxuQ-M1yQpy7FtwOqqgOT4Nv7R_zhdUYY5YfXlxamqDEG0iRHY__2J3CWv6X3lHARMs2mSwJyIvUDn0S9_utqHHD0h8M7TpyUOatPQPsG-ztTNroY7bjPOGxKkpw5yf_69pKe-5rTwll0DwC-FOCV9HmCoHkIOAYHe-RBPFcGQ">
+</div>
+</div>
+</section>
+</main>
+<!-- Coming Soon Section -->
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary">
+
+</footer>
+<script>
+        // Simple scroll reveal observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Hover effects for nav
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.opacity = '1';
+            });
+        });
+    </script>
+
+
+
+
+</body></html>

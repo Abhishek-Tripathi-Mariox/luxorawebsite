@@ -1,0 +1,379 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LUXORA | Exclusive Membership</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#f8df71",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#dce2f7",
+                        "on-tertiary-container": "#b0b2b3",
+                        "secondary-fixed-dim": "#dec65a",
+                        "on-secondary-fixed": "#211b00",
+                        "primary-container": "#064e3b",
+                        "surface": "#f9f9ff",
+                        "primary-fixed-dim": "#95d3ba",
+                        "surface-dim": "#d3daef",
+                        "on-primary-fixed-variant": "#0b513d",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c5c7c8",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#404944",
+                        "on-tertiary-fixed": "#191c1d",
+                        "on-background": "#141b2b",
+                        "secondary-fixed": "#fbe273",
+                        "surface-tint": "#2b6954",
+                        "background": "#f9f9ff",
+                        "tertiary": "#2c2f30",
+                        "on-primary-fixed": "#002117",
+                        "inverse-surface": "#293040",
+                        "primary": "#003527",
+                        "tertiary-container": "#424546",
+                        "primary-fixed": "#b0f0d6",
+                        "surface-container-highest": "#dce2f7",
+                        "surface-bright": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "surface-container-low": "#f1f3ff",
+                        "inverse-primary": "#95d3ba",
+                        "on-surface": "#141b2b",
+                        "outline-variant": "#bfc9c3",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "outline": "#707974",
+                        "on-secondary-fixed-variant": "#534600",
+                        "on-secondary-container": "#736200",
+                        "secondary": "#6e5e00",
+                        "surface-container": "#e9edff",
+                        "on-primary-container": "#80bea6",
+                        "surface-container-high": "#e1e8fd",
+                        "tertiary-fixed": "#e1e3e4",
+                        "inverse-on-surface": "#edf0ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "margin-edge": "64px",
+                        "section-gap": "120px",
+                        "gutter": "32px",
+                        "stack-md": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "display-xl": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "display-xl": ["72px", {"lineHeight": "84px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .premium-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .bento-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 53, 39, 0.08);
+        }
+        .gradient-mask {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-[0_4px_30px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-edge h-20">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed-dim" href="index.html">LUXORA</a>
+<div class="hidden md:flex gap-10">
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="index.html">Home</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="services.html">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-primary border-b-2 border-secondary-container pb-1 transition-colors duration-300" href="member.html">Membership</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="partner.html">Partners</a>
+<!-- <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="#">Careers</a> -->
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/80 hover:text-primary transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-8 py-3 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary/90 transition-all active:opacity-80" href="contact.html">Enquire</a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0 transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="A cinematic, low-angle shot of a minimalist luxury lounge with floor-to-ceiling windows overlooking a serene emerald ocean at twilight. The lighting is soft and golden, illuminating plush velvet furniture and polished marble surfaces. The atmosphere is quiet, exclusive, and incredibly sophisticated, reflecting a high-end editorial travel magazine aesthetic with deep emerald and gold accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSajuLElYuxejacYCZtzIdgMIl0B_MdgHW2BMaDr5BMjjNY8bfLn4lh_rThU9GqQoG5sEWdT187TbtGLn9K0QPti8BiuQ6cbZHfpAozKvcbTKsIM-va6U9wPT2KCIvYFw76fRaMSu80J5VQC_f7IoipGSXlehEvtksGA0bFKyxzsCx_akx2ad-UNzPZ6ArXl7JA2Giv0zg0ghL2pEVFGMXzpeNL3sd54Gzxuan-bE7c0hoIv6sjK0EBbfDN_-p7f5r8QSOaIbBQGA')"></div>
+<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-edge w-full text-center md:text-left transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<div class="inline-block px-4 py-1.5 mb-stack-md bg-secondary-fixed/20 border border-secondary-fixed/30 rounded-full backdrop-blur-md">
+<span class="font-label-sm text-label-sm uppercase text-secondary-fixed tracking-[0.2em]">The Inner Circle</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-white mb-stack-lg max-w-3xl">
+                    Luxury Membership
+                </h1>
+<p class="font-body-lg text-body-lg text-white/80 max-w-xl mb-stack-lg leading-relaxed">
+                    Access the inaccessible. LUXORA Membership grants you entry into a world of curated tranquility, bespoke services, and global privilege designed for the discerning traveler.
+                </p>
+<div class="flex flex-col md:flex-row gap-gutter items-center">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-12 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary-fixed-dim transition-all shadow-xl shadow-secondary-fixed/20">Membership Launching Soon</button>
+<span class="text-white/60 font-label-sm text-label-sm uppercase tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                        Exclusive Access
+                    </span>
+</div>
+</div>
+</section>
+<!-- Benefits Section - Bento Grid -->
+<section class="max-w-container-max mx-auto px-margin-edge py-section-gap">
+<div class="text-center mb-section-gap transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-stack-sm">Exceptional Privileges</h2>
+<div class="h-1 w-24 bg-secondary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<!-- Priority Access -->
+<div class="md:col-span-8 group relative bg-white p-stack-lg rounded-xl shadow-sm border border-outline-variant/30 bento-hover transition-all duration-500 overflow-hidden min-h-[400px] flex flex-col justify-end">
+<div class="absolute top-0 right-0 p-stack-lg">
+<span class="material-symbols-outlined text-primary text-5xl opacity-20 group-hover:opacity-100 transition-opacity duration-500" style="font-variation-settings: 'wght' 200;">schedule</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Priority Access</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Bypass traditional limitations. Members receive earliest notification and guaranteed availability for all high-demand properties and seasonal retreats globally.</p>
+</div>
+<div class="absolute inset-0 -z-10 opacity-5 group-hover:opacity-10 transition-opacity">
+<div class="w-full h-full bg-cover bg-center" data-alt="Close-up of a premium, brushed gold clock face integrated into a minimalist white marble wall. The aesthetic is clean, precise, and reflects high-end watchmaking craftsmanship. Soft ambient lighting creates a serene and punctual atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAerB4E26ibNjX4HNP-pGo5gFZw1mKb4VfJfxDzgNekkvj2BF_VbYfuO0pbQAzvJi9GbmrFHrklYPLgJp3ZU8a34O_ch3YezdAR8qeT3Rsla09fJ3Dmz4ZzqS-GGJLcyKEyMhBI9olmwRAI2p7d3tOUZe_QqqH_Cw6HnDZbETbOSdMpdbyLhKPeCqjpbcBU9N7Kwum0KdGXh8k60XbBK1ioH_0Q8Y5w_APlpxJ7rJwU4AUjMNW-OT3I2_APB_o1m7HLXTJ9z4Evwrg')"></div>
+</div>
+</div>
+<!-- Exclusive Benefits -->
+<div class="md:col-span-4 bg-primary text-on-primary p-stack-lg rounded-xl shadow-sm bento-hover transition-all duration-500 flex flex-col justify-between overflow-hidden">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<div>
+<h3 class="font-headline-md text-headline-md mb-stack-sm">Exclusive Benefits</h3>
+<ul class="space-y-stack-sm font-body-md text-on-primary-container">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Complimentary Upgrades</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Private Chauffeur Credit</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Welcome Amenities</li>
+</ul>
+</div>
+</div>
+<!-- Premium Support & Dedicated Assistance -->
+<div class="md:col-span-4 bg-white p-stack-lg rounded-xl border border-outline-variant/30 bento-hover transition-all duration-500 text-center">
+<div class="w-16 h-16 bg-surface-container-low rounded-full flex items-center justify-center mx-auto mb-stack-md text-primary">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-stack-sm leading-tight">Dedicated Assistance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A personal concierge available 24/7 to orchestrate every detail of your journey, from itinerary planning to dinner reservations.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-low p-stack-lg rounded-xl bento-hover transition-all duration-500 flex flex-col items-center justify-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-stack-md" style="font-variation-settings: 'wght' 200;">local_activity</span>
+<h3 class="font-headline-md text-[24px] text-primary mb-stack-sm leading-tight">VIP Invitations</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Access to closed-door events, art previews, and gala evenings curated exclusively for the LUXORA community.</p>
+</div>
+<div class="md:col-span-4 bg-white p-stack-lg rounded-xl border border-outline-variant/30 bento-hover transition-all duration-500 relative overflow-hidden">
+<h3 class="font-headline-md text-[24px] text-primary mb-stack-sm leading-tight">Curated Experiences</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-lg">Discover hidden gems and tailored adventures that transcend traditional luxury.</p>
+<div class="w-full h-32 rounded-lg bg-cover bg-center" data-alt="A top-down aesthetic shot of a finely crafted leather travel journal, a gold fountain pen, and a crystal glass of amber liquid on a dark walnut desk. The mood is one of quiet planning, preparation, and ultimate luxury. Soft, warm lighting from the side creates deep shadows and glowing highlights." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW7Xcog1Pp0F9YYrMnAT2m8ADPqCIvixxu8YK6J1QPZLuklvy0IlxbD5Ml79R9c95i-lEL1GMcG8R6k0TAFe_MhSmTWvHvIVVqS2seIABDPt8PWcsFVmfCXsGtZfEoUSi6Y82QhuOLa04_3fJWKJAF7f4hAFo4p1SezDhF4L94YYOQrWJLathhynmD8MNlVy82RXYYnuQ_Ev898AKBNZSmxJHilCkIENfHAZKNJxKXr8G2Djo2C51l_e2PJI0dznee0tki3YHz0vQ')"></div>
+</div>
+</div>
+</section>
+<!-- Membership Levels -->
+<section class="bg-primary-container py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-edge transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<div class="text-center mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-stack-sm">Membership Tiers</h2>
+<p class="text-on-primary-container font-body-lg max-w-2xl mx-auto">Choose the level of exclusivity that aligns with your lifestyle. Each tier offers a progressively more refined ecosystem of support.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Silver Tier -->
+<div class="bg-white/5 backdrop-blur-md rounded-2xl p-10 border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col group">
+<div class="mb-stack-lg">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-widest">Silver</span>
+<div class="h-[1px] w-12 bg-tertiary-fixed-dim mt-2 group-hover:w-full transition-all duration-700"></div>
+</div>
+<h3 class="font-headline-md text-white mb-stack-lg text-4xl">Essential</h3>
+<ul class="space-y-stack-md mb-auto">
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> Priority Booking
+                            </li>
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> 24/7 Digital Concierge
+                            </li>
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> Travel Insurance
+                            </li>
+</ul>
+<button class="mt-section-gap w-full py-4 border border-white/20 text-white font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Select Tier</button>
+</div>
+<!-- Gold Tier -->
+<div class="bg-white rounded-2xl p-10 shadow-2xl scale-105 z-10 border border-secondary-fixed/30 flex flex-col group relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-secondary-fixed px-6 py-2 rounded-bl-xl font-label-sm text-label-sm uppercase text-on-secondary-fixed">Recommended</div>
+<div class="mb-stack-lg">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-widest">Gold</span>
+<div class="h-[2px] w-12 bg-secondary mt-2 group-hover:w-full transition-all duration-700"></div>
+</div>
+<h3 class="font-headline-md text-primary mb-stack-lg text-4xl">Preferred</h3>
+<ul class="space-y-stack-md mb-auto">
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">check</span> All Silver Benefits
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">check</span> Dedicated Personal Host
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">check</span> Airport Lounge Access
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant font-body-md">
+<span class="material-symbols-outlined text-secondary text-[20px]">check</span> Private Chef Services
+                            </li>
+</ul>
+<button class="mt-section-gap w-full py-4 bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-all">Select Tier</button>
+</div>
+<!-- Platinum Tier -->
+<div class="bg-white/5 backdrop-blur-md rounded-2xl p-10 border border-white/10 hover:bg-white/10 transition-all duration-500 flex flex-col group">
+<div class="mb-stack-lg">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest">Platinum</span>
+<div class="h-[1px] w-12 bg-secondary-fixed mt-2 group-hover:w-full transition-all duration-700"></div>
+</div>
+<h3 class="font-headline-md text-white mb-stack-lg text-4xl">Ultimate</h3>
+<ul class="space-y-stack-md mb-auto">
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> All Gold Benefits
+                            </li>
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> Global Estate Access
+                            </li>
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> Private Jet Coordination
+                            </li>
+<li class="flex items-center gap-3 text-white/70 font-body-md">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">check</span> Invitations to LUXORA Gala
+                            </li>
+</ul>
+<button class="mt-section-gap w-full py-4 border border-white/20 text-white font-label-sm text-label-sm uppercase tracking-widest hover:bg-white/10 transition-colors">Select Tier</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Journey -->
+<section class="max-w-container-max mx-auto px-margin-edge py-section-gap">
+<div class="text-center mb-section-gap transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-stack-sm block">The Path To Exclusivity</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Your Membership Journey</h2>
+</div>
+<div class="relative transition-all duration-1000 ease-out opacity-100 translate-y-0">
+<!-- Progress Line -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-outline-variant/30 hidden md:block -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter relative z-10">
+<!-- Step 1 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-white border border-outline-variant/50 rounded-full flex items-center justify-center mx-auto mb-stack-lg group-hover:border-secondary transition-colors duration-500">
+<span class="font-headline-md text-primary group-hover:text-secondary">01</span>
+</div>
+<h4 class="font-headline-md text-[24px] mb-stack-sm">Join</h4>
+<p class="font-body-md text-on-surface-variant px-10">Submit your application for review by our membership committee.</p>
+</div>
+<!-- Step 2 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-white border border-outline-variant/50 rounded-full flex items-center justify-center mx-auto mb-stack-lg group-hover:border-secondary transition-colors duration-500">
+<span class="font-headline-md text-primary group-hover:text-secondary">02</span>
+</div>
+<h4 class="font-headline-md text-[24px] mb-stack-sm">Unlock Benefits</h4>
+<p class="font-body-md text-on-surface-variant px-10">Upon approval, gain immediate access to our global portal and dedicated concierge.</p>
+</div>
+<!-- Step 3 -->
+<div class="text-center group">
+<div class="w-16 h-16 bg-white border border-outline-variant/50 rounded-full flex items-center justify-center mx-auto mb-stack-lg group-hover:border-secondary transition-colors duration-500">
+<span class="font-headline-md text-primary group-hover:text-secondary">03</span>
+</div>
+<h4 class="font-headline-md text-[24px] mb-stack-sm">Enjoy</h4>
+<p class="font-body-md text-on-surface-variant px-10">Indulge in a world of frictionless luxury tailored precisely to your preferences.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="max-w-container-max mx-auto px-margin-edge pb-section-gap">
+<div class="bg-surface-container rounded-3xl p-16 md:p-32 relative overflow-hidden text-center flex flex-col items-center transition-all duration-1000 ease-out opacity-100 translate-y-0">
+
+<div class="relative z-10">
+<h2 class="font-display-xl text-[48px] md:text-display-xl text-primary mb-stack-lg">Elevate Your World.</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-stack-lg">
+                        We are currently finalizing the inaugural membership selection. Register your interest to receive an invitation when applications open.
+                    </p>
+<div class="flex flex-col md:flex-row gap-stack-md w-full max-w-md mx-auto">
+<input class="flex-1 bg-white border-none rounded-full px-8 py-5 focus:ring-2 focus:ring-primary shadow-sm outline-none font-body-md" placeholder="Your Email Address" type="email">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:shadow-lg transition-all">Notify Me</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-primary-container w-full relative">
+
+<div class="max-w-container-max mx-auto px-margin-edge py-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<span class="text-on-primary/50 text-[14px]">© 2024 LUXORA. All rights reserved.</span>
+<div class="flex gap-gutter text-[14px] text-on-primary/50">
+<span class="">Designed for Distinction</span>
+<span class="">Crafted for Peace</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section > div').forEach(div => {
+            div.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(div);
+        });
+
+        // Hover sound or micro-interaction could be added here
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                btn.style.transform = 'scale(0.95)';
+                setTimeout(() => btn.style.transform = 'scale(1)', 150);
+            });
+        });
+    </script>
+
+
+</body></html>
